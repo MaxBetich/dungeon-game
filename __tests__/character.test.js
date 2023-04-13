@@ -1,4 +1,4 @@
-import Character from "../src/character";
+import {Character} from "../src/character";
 
 describe ('Character', () => {
 
