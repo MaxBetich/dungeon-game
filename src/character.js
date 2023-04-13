@@ -6,4 +6,11 @@ export class Character  {
     this.intelligence = 0;
     this.agility = 0;
   }
+
+  characterGenerator(startingHealth, startingStrength, startingIntelligence, startingAgility) {
+    this.health = startingHealth;
+    this.strength = startingStrength;
+    this.intelligence = startingIntelligence;
+    this.agility = startingAgility;
+  }
 }
