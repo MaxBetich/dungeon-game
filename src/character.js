@@ -13,4 +13,8 @@ export class Character  {
     this.intelligence = startingIntelligence;
     this.agility = startingAgility;
   }
+
+  levelUp() {
+    
+  }
 }

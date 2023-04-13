@@ -18,5 +18,15 @@ describe ('Character', () => {
     expect(newCharacter.strength).toEqual(2);
     expect(newCharacter.intelligence).toEqual(3);
     expect(newCharacter.agility).toEqual(4);
-  })
+  });
+
+  test('should successfully increase the properties of a Character object when running the levelUp method', () => {
+    const newCharacter = new Character("character one");
+    newCharacter.characterGenerator(1,2,3,4);
+    newCharacter.levelUp();
+    expect(newCharacter.health).toBeGreaterThan(1);
+    expect(newCharacter.strength).toBeGreaterThan(2);
+    expect(newCharacter.intelligence).toBeGreaterThan(3);
+    expect(newCharacter.agility).toBeGreaterThan(4);
+  });
 })
