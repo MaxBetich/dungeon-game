@@ -28,5 +28,9 @@ describe ('Character', () => {
     expect(newCharacter.strength).toBeGreaterThan(2);
     expect(newCharacter.intelligence).toBeGreaterThan(3);
     expect(newCharacter.agility).toBeGreaterThan(4);
+    expect(newCharacter.health).toBeLessThan(5);
+    expect(newCharacter.strength).toBeLessThan(6);
+    expect(newCharacter.intelligence).toBeLessThan(7);
+    expect(newCharacter.agility).toBeLessThan(8);
   });
 })

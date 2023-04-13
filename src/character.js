@@ -15,6 +15,9 @@ export class Character  {
   }
 
   levelUp() {
-    
+    this.health += Math.ceil(Math.random()*3);
+    this.strength += Math.ceil(Math.random()*3);
+    this.intelligence += Math.ceil(Math.random()*3);
+    this.agility += Math.ceil(Math.random()*3);
   }
 }
